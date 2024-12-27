@@ -1,0 +1,62 @@
+.how-to-tabs-container {
+  display: flex; /* 横並びにする */
+  justify-content: center; /* 全体を中央寄せ */
+  align-items: center; /* 垂直方向も中央寄せ */
+  gap: 15px; /* タブ間にスペースを追加 */
+  padding: 10px 0;
+  background-color: transparent; /* 背景を透明にする */
+}
+
+.how-to-tab {
+  background-color: #7de5f1; /* 各タブの背景色 */
+  border-radius: 8px; /* タブを角丸に */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ボックスシャドウで立体感を追加 */
+  overflow: hidden; /* 内部の要素がはみ出さないように */
+}
+
+.how-to-tab a {
+  display: inline-block;
+  color: #000000; /* テキスト色 */
+  text-decoration: none; /* 下線を消す */
+  font-weight: bold;
+  padding: 20px 20px; /* タブ内の余白を設定 */
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* ホバー時のアニメーション */
+}
+
+.how-to-tab a:hover {
+  background-color: #d2f8fd; /* ホバー時の色変更 */
+  transform: translateY(-2px); /* ホバー時に少し浮くように */
+}
+
+.how-to-tab a:active {
+  transform: translateY(0); /* クリック時のエフェクト */
+}
+
+/*説明のところ ナンバリング＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+.title-number {
+  color: #e36255; /* 数字を赤色に */
+  margin-right: 5px; /* 数字とテキストの間に余白 */
+}
+
+.nvx-title {
+  font-size: 20px;
+  font-weight: bold; /* 太字 */
+  margin: 10px 0; /* 上下余白 */
+  padding-left: 50px; /* タイトルを右に移動 */
+}
+
+.nvx-explanation {
+  font-size: 18px;
+  margin-left: 75px; /* 本文も右に少し移動 */
+}
+
+.explanation-picture {
+  text-align: center;
+  padding: 20px;
+  width: 60%;
+}
+.explanation-picture-box {
+  text-align: center;
+  padding: 20px;
+}

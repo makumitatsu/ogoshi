@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>トップメニュー</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/slide.css" />
+    <link rel="stylesheet" href="css/video.css" />
+  </head>
+  <body>
+    <header class="tabs-container">
+      <nav class="tabs">
+        <div class="tab" data-tab="top" data-link="index.html">
+          <a href="#">トップ</a>
+        </div>
+        <div class="tab" data-tab="noha" data-link="NVX.html">
+          <a href="#">脳波計・測定</a>
+        </div>
+        <div class="tab" data-tab="analysis" data-link="edf-top.html">
+          <a href="#">解析・EDF</a>
+        </div>
+        <div class="tab" data-tab="help"><a href="#">Help</a></div>
+      </nav>
+      <div class="underline"></div>
+    </header>
+
+    <div class="dropdown-container">
+      <div class="dropdown noha-dropdown">
+        <div class="dropdown-item" data-link="NVX.html#nvx">
+          脳波計(NVX)の配線
+        </div>
+        <div class="dropdown-item" data-link="NVX.html#neorec">
+          NeoRecの設定方法
+        </div>
+        <div class="dropdown-item" data-link="NVX.html#trigger">
+          トリガーの取り方
+        </div>
+        <div class="dropdown-item" data-link="NVX.html#windowsXP">
+          脳波計(WindowsXP)の配線
+        </div>
+      </div>
+
+      <div class="dropdown analysis-dropdown">
+        <div class="dropdown-item">EDFbrowser</div>
+        <div class="dropdown-item">EDFbrowser</div>
+        <div class="dropdown-item">EDFbrowser</div>
+      </div>
+    </div>
+
+    <div class="slideshow-container">
+      <!-- スライド -->
+      <div class="slide" data-link="NVX.html">
+        <img src="img/NVX/surface.png" alt="NVX" />
+      </div>
+      <div class="slide" data-link="NVX.html#neorec">
+        <img src="img/NeoRec/surface.png" alt="NeoRec" />
+      </div>
+      <div class="slide" data-link="NVX.html#windowsXP">
+        <img src="img/WindowsXP/surface.png" alt="WindowsXP" />
+      </div>
+      <div class="slide" data-link="productA.html">
+        <img src="img/EDF/surface.png" alt="EDFbrowser" />
+      </div>
+
+      <!-- ボタン -->
+      <button class="prev-btn">&lt;</button>
+      <button class="next-btn">&gt;</button>
+
+      <!-- ページネーション -->
+      <div class="pagination"></div>
+    </div>
+
+    <main class="content">
+      <h1 class="title">脳波計とEDFbrowser,脳波解析の解説サイト</h1>
+    </main>
+
+    <script src="js/tab.js"></script>
+    <script src="js/slide.js"></script>
+  </body>
+</html>

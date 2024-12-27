@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>脳波計・測定</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/NVX.css" />
+    <link rel="stylesheet" href="css/video.css" />
+  </head>
+  <body>
+    <header class="tabs-container">
+      <nav class="tabs">
+        <div class="tab" data-tab="top" data-link="index.html">
+          <a href="#">トップ</a>
+        </div>
+        <div class="tab" data-tab="noha" data-link="NVX.html">
+          <a href="#">脳波計・測定</a>
+        </div>
+        <div class="tab" data-tab="analysis" data-link="edf-top.html">
+          <a href="#">解析・EDF</a>
+        </div>
+        <div class="tab" data-tab="help"><a href="#">Help</a></div>
+      </nav>
+      <div class="underline"></div>
+    </header>
+
+    <div class="dropdown-container">
+      <div class="dropdown noha-dropdown">
+        <div class="dropdown-item" data-link="NVX.html#nvx">
+          脳波計(NVX)の配線
+        </div>
+        <div class="dropdown-item" data-link="NVX.html#neorec">
+          NeoRecの設定方法
+        </div>
+        <div class="dropdown-item" data-link="NVX.html#trigger">
+          トリガーの取り方
+        </div>
+        <div class="dropdown-item" data-link="NVX.html#windowsXP">
+          脳波計(WindowsXP)の配線
+        </div>
+      </div>
+
+      <div class="dropdown analysis-dropdown">
+        <div class="dropdown-item">EDFbrowser</div>
+        <div class="dropdown-item">EDFbrowser</div>
+        <div class="dropdown-item">EDFbrowser</div>
+      </div>
+    </div>
+
+    <main class="content">
+      <h1 class="title">NVX</h1>
+      <div class="video">
+        <!-- 動画はdivでブロック化してあげてください-->
+        <iframe
+          src="https://kosenjp.sharepoint.com/sites/msteams_0c86db/_layouts/15/embed.aspx?UniqueId=e390ec04-a83c-4504-b1f6-ee35408bfe1c&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+          width="640"
+          height="360"
+          frameborder="0"
+          scrolling="no"
+          allowfullscreen
+          title="OCVideo.755481905.714442.mp4"
+        ></iframe>
+      </div>
+      <nav class="how-to-tabs-container">
+        <div class="how-to-tab">
+          <a href="#nvx">NVXの配線方法</a>
+        </div>
+        <div class="how-to-tab">
+          <a href="#neorec">NeoRecの設定方法</a>
+        </div>
+        <div class="how-to-tab">
+          <a href="#trigger">トリガーの取り方</a>
+        </div>
+        <div class="how-to-tab">
+          <a href="#windowsXP">脳波計(WindowsXP)の配線</a>
+        </div>
+      </nav>
+    </main>
+
+    <main id="explanation-js" class="explanation-js"></main>
+
+    <script src="js/tab.js"></script>
+    <script src="js/NVX.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>タブとドロップダウン</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="tabs-container">
+      <nav class="tabs">
+        <div class="tab" data-tab="top" data-link="index.html">
+          <a href="#">トップ</a>
+        </div>
+        <div class="tab" data-tab="noha" data-link="noha-product-top.html">
+          <a href="#">脳波計</a>
+        </div>
+        <div class="tab" data-tab="analysis" data-link="edf-top.html">
+          <a href="#">EDF</a>
+        </div>
+        <div class="tab" data-tab="help"><a href="#">Help</a></div>
+      </nav>
+      <div class="underline"></div>
+    </header>
+
+    <div class="dropdown-container">
+      <div class="dropdown noha-dropdown">
+        <div class="dropdown-item">脳波計(NVX)の配線</div>
+        <div class="dropdown-item">NeoRecの設定方法</div>
+        <div class="dropdown-item">脳波計(WindowsXP)の配線</div>
+      </div>
+
+      <div class="dropdown analysis-dropdown">
+        <div class="dropdown-item">EDFbrowser</div>
+        <div class="dropdown-item">EDFbrowser</div>
+        <div class="dropdown-item">EDFbrowser</div>
+      </div>
+    </div>
+
+    <main class="content">
+      <h1>脳波計とEDFbrowser,脳波解析の解説サイト</h1>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
